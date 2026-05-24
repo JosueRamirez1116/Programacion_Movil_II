@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:intro/columnas.dart';
+import 'package:intro/filas.dart';
+import 'package:intro/padding.dart';
 
 void main(){
   runApp(MyApp());
@@ -26,7 +29,16 @@ class MyApp extends StatelessWidget {
                 Icon(Icons.abc),
                 Icon(Icons.camera)
               ],
-            )
+            ),
+            ElevatedButton(onPressed: (){},
+             style: ButtonStyle(
+              backgroundColor:WidgetStatePropertyAll(Colors.cyan)
+             ),
+             child: Text('Haz Click'),
+            ),
+            Filas(),
+            Columnas(),
+            ElPadding()
           ],
         ),
       ),
